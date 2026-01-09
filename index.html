@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Netflix</title>
-    </head>
-    <body>
-        <div class="main">
-            <nav>
-                <img class="NetlfixLogo"
-                    src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460"
-                    alt>
-                <div class="sidebar">
-                    <button class="Language">English</button>
-                    <button class="signIn">Sign In</button>
-                </div>
-            </nav>
-            <div class="content">
-                <div class="bolder">
-                    <span> Unlimited movies,
-                    </span>
-                    <span>TV shows and </span>
-                    <span>more</span>
-                </div>
-                <div class="smallFont">
-                    <span> Starts at ₹149. Cancel at any time.
-                    </span>
-
-                    <span>
-                        Ready to watch? Enter your email to create or restart
-                        your
-                        membership.
-                    </span>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="overlay"></div>
+        
+        <nav class="navbar">
+            <img class="netflix-logo" 
+                src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460"
+                alt="Netflix Logo">
+            <div class="nav-buttons">
+                <select class="language-select" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+                <button class="sign-in-btn">Sign In</button>
             </div>
-            <div class="start">
-                <button class="Email">
-                    Email address
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Unlimited movies, TV shows and more
+            </h1>
+            <p class="hero-subtitle">Starts at ₹149. Cancel at any time.</p>
+            <p class="hero-text">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            
+            <form class="email-signup">
+                <input type="email" class="email-input" placeholder="Email address" required>
+                <button type="submit" class="get-started-btn">
+                    Get Started <span aria-hidden="true">›</span>
                 </button>
-                <button class="GetStarted">Get Started ></button>
-            </div>
-            <div class="box">
-            </div>
+            </form>
         </div>
-        <div class="central">
-            <div class="container1">
-                <div class="menu">
-                    <div class="trendLogo">
-                        <h1>Trending Now</h1>
-                    </div>
-                    <div class="series">
-                        <div class="image1"><h3>1</h3></div>
-                        <!-- <img
-                        src="C:\Users\ADITYA\Desktop\SigmaWB Dev\NetflixClone\Images\DaakuMaharaj.jpg"
-                        alt="1" > -->
-                        <div class="image2"><h3>2</h3></div>
-                        <!-- <img
-                        src="C:\Users\ADITYA\Desktop\SigmaWB Dev\NetflixClone\Images\Naadaniyan.jpg"
-                        alt="1"> -->
-                        <div class="image3"><h3>3</h3></div>
-                        <!-- <img
-                        src="C:\Users\ADITYA\Desktop\SigmaWB Dev\NetflixClone\Images\SquidGame.jpg"
-                        alt="1"> -->
+    </div>
 
-                        <div class="image4"><h3>4</h3></div>
-                        <!-- <img
-                        src="C:\Users\ADITYA\Desktop\SigmaWB Dev\NetflixClone\Images\Pushpa2.jpg"
-                        alt="1"> -->
-                        <div class="image5"><h3>5</h3></div>
-                        <!-- <img
-                        src="C:\Users\ADITYA\Desktop\SigmaWB Dev\NetflixClone\Images\Thandel.jpg"
-                        alt="1"> -->
-
-                    </div>
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="trending-carousel">
+                <div class="trending-item" style="background-image: url('https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTixI7Cz0HVkuB1KQvyT9xedX83h2ob_PwNRW74psOcCGFKugKnc9ErhsaNh6JyyjGFS7ZLrxafx7yAkgdqlsT2kP9b0oGHIRnY.jpg?r=a92')">
+                    <span class="rank-number">1</span>
                 </div>
-            </div>
-
-            <div class="container2">
-                <h2 style="font-size: 40px; color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;">
-                    More Reasons to Join
-                </h2>
-                <div class="row">
-                    <div class="row1">
-                        <h1>
-                            Enjoy on your TV
-                        </h1>
-                        <h4>
-                        Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple
-                        TV, Blu-ray players and more.</h4>
-                    </div>
-                    <div class="row1">
-                        <h1>Download your shows to watch offline</h1>
-                        <h4>Save your favourites easily and always have something to
-                        watch.</h4>
-                    </div>
-                    <div class="row1">
-                        <h1>Watch everywhere</h1>
-                        <h4>Stream unlimited movies and TV shows on your phone,
-                        tablet, laptop and TV.</h4>
-                    </div>
-                    <div class="row1">
-                        <h1>Create profiles for kids</h1>
-<h4>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</h4>
-                    </div>
+                <div class="trending-item" style="background-image: url('https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbod3HEQ8e1n7-RMYpfXAjRzsmdywF16AK7p7Ys7toNK49kV8YWIds9AzfzwW_BqbhN6BLbINMajFxZ0x9KHOKl1s2g5fG1waUo.jpg?r=cf5')">
+                    <span class="rank-number">2</span>
+                </div>
+                <div class="trending-item" style="background-image: url('https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZMosKxdFgxev7W1YxooOu2wL_Kc3LwyYduCJ8nKme-kSdFXzCIRaMV4kYchreILRl6izcs-TrvJJCatDPe_vPwJ-wR6Zjk6yHTOXTM767pKfIrjgSGm5iTT5QFzgN6xjheO.jpg?r=06c')">
+                    <span class="rank-number">3</span>
+                </div>
+                <div class="trending-item" style="background-image: url('https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfy0bT4c6_DdmFTe2zRiiYlJkIs72mKLwDP_0z1VVLDwYGE3sxSFjvXen7Gr_xMvWqmPhWB53kwtkW_dGW8k6RRL0QSbLuEz5tI.jpg?r=7c1')">
+                    <span class="rank-number">4</span>
+                </div>
+                <div class="trending-item" style="background-image: url('https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRdIn8RTERehC5PBINwZCar6O_zkvAAWbQdiyHQWy_HSWVjY1VdYOhDL6Jc6mUnEV4-n2No9FJz4sWZPcUdurxgbeAIDLWXrnmw.jpg?r=207')">
+                    <span class="rank-number">5</span>
                 </div>
             </div>
         </div>
-    </body>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title centered">More Reasons to Join</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
