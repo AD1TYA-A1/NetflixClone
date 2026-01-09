@@ -1,277 +1,324 @@
+/* Reset and Base Styles */
 * {
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body{
-    background-color: black;
-}
-.main,
-.box {
-  width: 100%;
-  height: 90vh;
-}
-.main {
-  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.box {
-  background-color: black;
-  opacity: 0.7;
-  position: absolute;
-  top: 0px;
-  box-shadow: inset -25px 5px 5px rgb(0, 0, 0),
-    /* Bottom-left */ inset 25px 5px 5px rgba(0, 0, 0, 0),
-    /* Bottom-right */ inset -25px -5px 5px rgba(0, 0, 0, 0),
-    /* Top-left */ inset 25px -5px 5px rgba(0, 0, 0, 0); /* Top-right */
-}
-nav {
-  /* background-color: red; */
-  position: relative;
-  z-index: 3;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 70vw;
-  margin: auto;
-}
-.NetlfixLogo {
-  /* fill: red; */
-  /* color: red; */
-  width: 151px;
-  height: 108px;
-  position: relative;
-  /* background-color: red; */
-}
-.Language {
-  width: 150px;
-  height: 40px;
-  color: white;
-  border: 2px solid rgba(127, 123, 123, 0.477);
-}
-.sidebar {
-}
-button {
-  background-color: transparent;
-  position: relative;
-  left: 30px;
-}
-.signIn {
-  color: white;
-  background-color: red;
-  border: 2px solid red;
-  border-radius: 7px;
-  margin-left: 10px;
-  width: 80px;
-  height: 40px;
-}
-.central{
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  flex-direction: column;
-}
-.content {
-  width: 50%;
-  height: 45%;
-  position: relative;
-  z-index: 6;
-  top: 10px;
-  left: 25%;
-  color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 30px;
-  gap: 12px;
-  /* background-color: rebeccapurple; */
-}
-.bolder {
-  font-weight: 1000;
-  font-size: 50px;
-  display: flex;
-  padding-top: 0px;
-  /* justify-content: center; */
-  align-items: center;
-  flex-direction: column;
-}
-.smallFont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* font-size: 15px; */
-  gap: 20px;
-}
-div.smallFont > *:nth-child(1) {
-  font-size: 20px;
-  font-weight: 300;
-  padding-top: 0px;
-  /* background-color: red;   */
-}
-div.smallFont > *:nth-child(2) {
-  /* background-color: red; */
-  font-weight: 500;
-  font-size: 15px;
-  padding-top: 0px;
-}
-.start {
-  /* background-color: red; */
-  width: 100%;
-  position: relative;
-  z-index: 5;
-  top: 55px;
-  /* left: 250px;   */
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  /* background-color: red; */
-}
-.Email {
-  background-color:rgba(52, 51, 51, 0.645);
-  width: 410px;
-  height: 55px;
-  margin-right: 20px;
-  /* top: 20px;
-  left: 60px; */
-  font-size: 16px;
-  border-radius: 8px;
-  /* position: absolute; */
-  color: rgba(205, 187, 187, 0.889);
-  text-align: left;
-  padding-left: 20px;
-  border: 2px solid  rgba(205, 187, 187, 0.889);
-}
-.GetStarted{
-    position: relative;
-    /* left: 419px;
-    top: 20px; */
-    width: 215px;
-    height: 55px;
-    border: 2px solid red;
-    font-weight: 400;
-    color: white;
-    font-size: 25px;
-     background-color: red;
-}
-.container1{
-  /* position: relative;
-  z-index: 50; */
-  width: 100%;
-  height: 70vh;
-  color: white;
-  background-color: black;
-}
-.series{
-  display: flex;
-  /* align-items:center; */
-  /* justify-content:space-evenly; */
-  position: relative;
-  top: 100px;
-  height: 40vh;
-  padding-top: 0px;
-  width: 80vw;
-  overflow: hidden;
-  margin: auto;
-  /* background-color: yellow; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.trendLogo{
-  /* background-color: red; */
-  position: relative;
-  left:100px;
-  font-size: 22px;
-  font-weight : 900;
-  width: 295px;
-  height: 33px;
-  top: 60px;
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
 }
-.image1 , .image2 , .image3, .image4 , .image5{
-  /* background-color: red; */
-  margin: -23px 20px;
-  color: black;
-  background-repeat:no-repeat;
-  background-size: cover;
-  width: 40vw;
-  height: 40vh;
-  font-weight: 900;
-  font-size: 90px;
-  display: flex;
-  justify-content: flex-start;
-  align-items:end;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.image1{
-  background-image: url("https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTixI7Cz0HVkuB1KQvyT9xedX83h2ob_PwNRW74psOcCGFKugKnc9ErhsaNh6JyyjGFS7ZLrxafx7yAkgdqlsT2kP9b0oGHIRnY.jpg?r=a92");
-  
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/42a0bce6-fc59-4c1c-b335-7196a59ae9ab/web/IN-en-20250303-TRIFECTA-perspective_d5f81427-d6cf-412d-8e86-2315671b9be1_large.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
 }
-.image2{
-background-image: url("https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbod3HEQ8e1n7-RMYpfXAjRzsmdywF16AK7p7Ys7toNK49kV8YWIds9AzfzwW_BqbhN6BLbINMajFxZ0x9KHOKl1s2g5fG1waUo.jpg?r=cf5");
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+    z-index: 1;
 }
-.image3{
-  background-image: url("https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZMosKxdFgxev7W1YxooOu2wL_Kc3LwyYduCJ8nKme-kSdFXzCIRaMV4kYchreILRl6izcs-TrvJJCatDPe_vPwJ-wR6Zjk6yHTOXTM767pKfIrjgSGm5iTT5QFzgN6xjheO.jpg?r=06c");
+
+/* Navigation */
+.navbar {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
-.image4{
-  background-image: url("https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfy0bT4c6_DdmFTe2zRiiYlJkIs72mKLwDP_0z1VVLDwYGE3sxSFjvXen7Gr_xMvWqmPhWB53kwtkW_dGW8k6RRL0QSbLuEz5tI.jpg?r=7c1");
+
+.netflix-logo {
+    width: 150px;
+    height: auto;
 }
-.image5{
-  background-image: url("https://occ-0-2482-3647.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABRdIn8RTERehC5PBINwZCar6O_zkvAAWbQdiyHQWy_HSWVjY1VdYOhDL6Jc6mUnEV4-n2No9FJz4sWZPcUdurxgbeAIDLWXrnmw.jpg?r=207");
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
-h3{
-  position: absolute;
-  text-shadow: 0 0 15px rgb(255, 255, 255); /* Adjust values as needed */
-  position: relative;
-  right:32px;
-  font-size: 100%;
+
+.language-select {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px 30px 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
 }
-.container2{
-  /* background-color: rebeccapurple; */
-  position: relative;
-  z-index: 23;
-  height: 200vh;
-  width: 90vw;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
+
+.sign-in-btn {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
-.row{
-  /* background-color:black; */
-  width: 90%;
-  height: 30%;
-  margin: 9px;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+
+.sign-in-btn:hover {
+    background-color: #c11119;
 }
-.row1{
-  border: 2px solid white;
-  background-image: url("https://149360059.v2.pressablecdn.com/wp-content/uploads/2010/06/red-gradient-1030x773.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90%;
-  color: white;
-  margin: 1%;
-  border-radius: 13px;
-  width: 90%;
-  display: flex;
-  justify-content: baseline;
-  align-items:center;
-  flex-direction: column;
-  overflow:visible;
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 10;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 950px;
+    margin: 0 auto;
 }
-.row1 > h1{
-  margin: 32px;
-  font-size: 200%;
+
+.hero-title {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 900;
+    margin-bottom: 16px;
+    line-height: 1.1;
 }
-.row1 > h4{
-  margin: 22px;
-  font-size: 120%;
+
+.hero-subtitle {
+    font-size: clamp(18px, 2.5vw, 24px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: clamp(16px, 2vw, 20px);
+    margin-bottom: 20px;
+}
+
+/* Email Signup Form */
+.email-signup {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 650px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.email-input {
+    flex: 1;
+    min-width: 250px;
+    padding: 18px 16px;
+    font-size: 16px;
+    background-color: rgba(22, 22, 22, 0.7);
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #fff;
+    background-color: rgba(22, 22, 22, 0.9);
+}
+
+.get-started-btn {
+    padding: 18px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.get-started-btn:hover {
+    background-color: #c11119;
+}
+
+/* Trending Section */
+.trending-section {
+    padding: 60px 0;
+    background-color: #000;
+}
+
+.section-title {
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.section-title.centered {
+    text-align: center;
+    padding-left: 0;
+}
+
+.trending-carousel {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #000;
+}
+
+.trending-carousel::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trending-carousel::-webkit-scrollbar-track {
+    background: #000;
+}
+
+.trending-carousel::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.trending-item {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.trending-item:hover {
+    transform: scale(1.05);
+}
+
+.rank-number {
+    position: absolute;
+    bottom: 10px;
+    left: -5px;
+    font-size: 120px;
+    font-weight: 900;
+    color: #000;
+    text-shadow: 
+        -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff,
+        2px 2px 0 #fff;
+    line-height: 1;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 0 100px;
+    background-color: #000;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #230c0f 0%, #540d19 100%);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .netflix-logo {
+        width: 100px;
+    }
+    
+    .email-signup {
+        flex-direction: column;
+    }
+    
+    .email-input {
+        min-width: 100%;
+    }
+    
+    .trending-item {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .rank-number {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 20px 15px;
+    }
+    
+    .trending-item {
+        width: 200px;
+        height: 300px;
+    }
 }
